@@ -1,186 +1,100 @@
-.madimi-one-regular {
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  body, html {
-    height: 100%;
-  }
-  
-  /* The hero image */
-  .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../arrest/Almond\ flour\ keto\ cookies.jpeg");
-  
-  /* Set a specific height */
-  height: 50%;
-  
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #161623;
   position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text {
-  text-align: center;
+}
+
+body::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  }
-  
-  /* Buttons */
-  button {
-    background-color: #f6d87c; /* 主题颜色 */
-    color: #A87A56; /* 文字颜色 */
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.4s ease-out;
-  }
-  
-  button:hover {
-    background-color: #FFEDE0; /* 鼠标悬停时的背景色 */
-  }
-  
-  /* Cheese Gallery */
-  .cheese-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .cheese-item {
-    display: flex;
-    align-items: center;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%; /* 设置宽度为100% */
-  }
-  
-  
-  .cheese-description {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .cheese-description p {
-    margin: 0 0 10px;
-  }
-  
-  .cheese-image {
-    max-width: 600px;
-    height: auto;
-    border-radius: 0 10px 10px 0;
-  }
-  
-  /* Accordion */
-  .accordion {
-    background-color: #ffeeaf;
-    color: #A87A56;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #f6d87c;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: #A87A56;
-    display: none;
-    overflow: hidden;
-  }
-  
-  /* Footer CSS */
-  footer {
-    background-color: #f6d87c; /* 保持原有颜色 */
-    color: #A87A56; /* 文字颜色 */
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around; /* 在元素之间保持均匀间距 */
-    align-items: center; /* 使内容垂直居中 */
-    margin: 0 auto; /* 水平居中 */
-  }
-  
-  .footer-text {
-    text-align: left; /* 文本左对齐 */
-    flex: 1; /* 占用可用空间 */
-    padding: 0 20px; /* 添加一些内边距 */
-  }
-  
-  .google-map {
-    flex: 1; /* 占用可用空间 */
-    padding: 0 20px; /* 添加一些内边距 */
-    order: 2; /* 确保地图总是在右边 */
-  }
-  
-  .google-map iframe {
-    width: 50%; /* 使用其容器的全部宽度 */
-    height: 150px; /* 设置固定高度 */
-  }
-  
-  .footer-links {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-  }
-  
-  .footer-links li a {
-    color: #A87A56;
-    text-decoration: none;
-  }
-  
-  #copyright {
-    margin-top: 20px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  /* 响应式调整 */
-  @media (max-width: 800px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    .footer-text, .google-map {
-      width: 100%;
-      padding: 20px 0; /* 调整为上下内边距，移除左右内边距 */
-    }
-    .google-map iframe {
-      height: 200px; /* 较小屏幕上的较小地图 */
-    }
-  }
-  .footer-icons {
-    display: flex;
-    justify-content: center; /* 或者其他您喜欢的对齐方式 */
-    gap: 20px; /* 调整图标之间的间隔 */
-  }
-  
-  .footer-icons .material-icons {
-    font-size: 24px; /* 调整图标大小 */
-    color: #A87A56; /* 调整图标颜色，您可以改为任何您喜欢的颜色 */
-  }
-  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3,#e91e63);
+  clip-path: circle(30% at right bottom);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.container .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .content h2 {
+  position: absolute;
+  top: -60px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.container .card .content h3 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+.container .card .content p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  max-width: 100%; /* Ensure that images are not bigger than the card */
+  height: auto; /* Maintain the aspect ratio */
+  border-top-left-radius: 15px; /* Match the card's border-radius */
+  border-top-right-radius: 15px; /* Match the card's border-radius */
+  object-fit: cover; /* Ensure that images cover the area without stretching */
+}
