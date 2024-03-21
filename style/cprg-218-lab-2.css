@@ -82,16 +82,6 @@ footer {
   height: 150px;
 }
 
-.footer-links {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
-}
-
-.footer-links li a {
-  color: #A87A56;
-  text-decoration: none;
-}
 
 @media (max-width: 800px) {
   .footer-content {
@@ -106,10 +96,9 @@ footer {
   }
 }
 
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.footer-socials svg {
+  width: 32px; /* 设置 logo 的宽度 */
+  fill: rgb(111, 55, 3); /* 填充颜色为蓝色 */
 }
 
 .footer-icons .material-icons {
@@ -235,4 +224,9 @@ footer {
 /* Optional: Hide the last line */
 .accordion-content p:last-child::after {
   display: none;
+}
+
+iframe {
+  width: 100%; /* 将视频宽度设置为100% */
+  height: 400px; /* 根据需要调整视频高度 */
 }
