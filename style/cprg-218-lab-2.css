@@ -15,7 +15,7 @@
   /* The hero image */
   .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Roquefort copy.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../arrest/Almond\ flour\ keto\ cookies.jpeg");
   
   /* Set a specific height */
   height: 50%;
