@@ -1,29 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var starBtn = document.getElementById('star-btn');
-    var contentContainer = document.querySelector('.content-container');
-  
-    starBtn.addEventListener('click', function (event) {
-      event.stopPropagation();
-      contentContainer.scrollIntoView({ behavior: 'smooth' });
-    });
+  var starBtn = document.getElementById('star-btn');
+  var contentContainer = document.querySelector('.content-container');
+
+  starBtn.addEventListener('click', function (event) {
+    event.stopPropagation();
+    contentContainer.scrollIntoView({ behavior: 'smooth' });
   });
-  
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function(event) {
-      event.stopPropagation(); 
-  
+
+  var accTitles = document.querySelectorAll(".accordion-title");
+  accTitles.forEach(function(title) {
+    title.addEventListener("click", function() {
       this.classList.toggle("active");
       var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
+      panel.classList.toggle("collapsed");
     });
-  }
-  
-var currentYear = new Date().getFullYear();
-document.getElementById("copyright").innerHTML = "&copy; " + currentYear + " Cheese Delights. All rights reserved.";
+  });
+
+  var currentYear = new Date().getFullYear();
+  document.getElementById("copyright").innerHTML = "&copy; " + currentYear + " Cheese Delights. All rights reserved.";
+});

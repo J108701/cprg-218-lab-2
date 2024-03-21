@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/cprg-218-lab-4.css">
+  <link rel="stylesheet" type="text/css" href="style/cprg-218-lab-2.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <title>KETO Hero</title>
 </head>
@@ -36,45 +37,78 @@
     <h2 class="madimi-one-regular">About Us/History</h2>
     <p class="madimi-one-regular">KETO Hero was founded in 2022 by two passionate pastry chefs committed to the keto lifestyle. Our mission is to provide high-quality, low-carb, sugar-free desserts, helping every customer enjoy their keto journey while indulging in delicious treats.</p>
 
-    <h2 class="madimi-one-regular">Product Catalog</h2>
-    <div class="product-item">
-      <h3 class="madimi-one-regular">Chocolate Keto Cake</h3>
-      <p class="madimi-one-regular">A classic, rich chocolate cake, completely sugar-free and keto-friendly.</p>
-    </div>
-    <div class="product-item">
-      <h3 class="madimi-one-regular">Blueberry Keto Muffins</h3>
-      <p class="madimi-one-regular">Fresh blueberries meet almond flour to create delicious keto muffins, perfect for breakfast or a snack.</p>
-    </div>
-    <div class="product-item">
-      <h3 class="madimi-one-regular">Almond Flour Keto Cookies</h3>
-      <p class="madimi-one-regular">Crunchy and delightful, these almond flour cookies are a sugar-free, low-carb treat.</p>
-    </div>
+    <section class="container content-container">
+      <h2 class="madimi-one-regular">Product Catalog</h2>
+      <!-- 第一个产品 -->
+      <div class="card">
+          <img src="arrest/cake.jpeg" alt="Chocolate Keto Cake" class="keto-image">
+          <div class="content">
+              <h2>01</h2>
+              <h3>Chocolate Keto Cake</h3>
+              <p>A classic, rich chocolate cake, completely sugar-free and keto-friendly. Perfect for satisfying your sweet tooth without breaking your diet.</p>
+              <a href="#">Read More</a>
+          </div>
+      </div>
+      <!-- 第二个产品 -->
+      <div class="card">
+          <img src="arrest/cookies.jpeg" alt="Blueberry Keto Muffins" class="keto-image">
+          <div class="content">
+              <h2>02</h2>
+              <h3>Blueberry Keto Muffins</h3>
+              <p>Fresh blueberries meet almond flour to create delicious keto muffins, perfect for breakfast or a snack without the guilt.</p>
+              <a href="#">Read More</a>
+          </div>
+      </div>
+      <!-- 第三个产品 -->
+      <div class="card">
+          <img src="arrest/muffins.jpeg" alt="Almond Flour Keto Cookies" class="keto-image">
+          <div class="content">
+              <h2>03</h2>
+              <h3>Almond Flour Keto Cookies</h3>
+              <p>Crunchy and delightful, these almond flour cookies are a sugar-free, low-carb treat, ideal for snacking on the keto diet.</p>
+              <a href="#">Read More</a>
+          </div>
+      </div>
+  </section>
     
     <h2 class="madimi-one-regular">Customer Reviews</h2>
     <p class="madimi-one-regular">We encourage all our customers to leave their feedback after their purchase. Your feedback is invaluable to us and helps us continue to improve our products and services.</p>
 
     <h2 class="madimi-one-regular">FAQ</h2>
     <div class="faq-container">
-      <h3>About Ordering</h3>
-      <p>How can I place an order online? Visit our website and browse our product catalog to place an order directly through our secure checkout system.</p>
-      <p>How far in advance should I place my order? We recommend placing your order at least 3-5 days in advance to ensure availability and timely delivery.</p>
-      <p>Can I modify my order after placing it? Yes, you can modify your order up to 24 hours before the scheduled delivery time.</p>
-
-      <h3>About Delivery</h3>
-      <p>What delivery options do you offer? We offer standard, expedited, and same-day delivery options to meet your needs.</p>
-      <p>Can I track the status of my order? Yes, you can track your order status by logging into your account on our website.</p>
-      <p>What if I am not at home? If you're not at home during delivery, we can leave your order with a neighbor or in a safe place of your choosing.</p>
-
-      <h3>About Products</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3 class="accordion-title">About Ordering</h3>
+          <div class="accordion-content">
+            <p>How can I place an order online? Visit our website and browse our product catalog to place an order directly through our secure checkout system.</p>
+            <p>How far in advance should I place my order? We recommend placing your order at least 3-5 days in advance to ensure availability and timely delivery.</p>
+            <p>Can I modify my order after placing it? Yes, you can modify your order up to 24 hours before the scheduled delivery time.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-title">About Delivery</h3>
+          <div class="accordion-content">
+            <p>What delivery options do you offer? We offer standard, expedited, and same-day delivery options to meet your needs.</p>
+            <p>Can I track the status of my order? Yes, you can track your order status by logging into your account on our website.</p>
+            <p>What if I am not at home? If you're not at home during delivery, we can leave your order with a neighbor or in a safe place of your choosing.</p>
+          </div>
+        </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">About Products</h3>
+            <div class="accordion-content">
       <p>What ingredients are in your desserts? Our desserts are made with high-quality, keto-friendly ingredients. For specific ingredients, please refer to the product descriptions.</p>
       <p>How should I store and enjoy these desserts? Store the desserts in a cool, dry place and follow the specific storage instructions provided with each product.</p>
       <p>What if I have an allergy to a certain ingredient? Please let us know if you have any dietary restrictions or allergies, and we will do our best to accommodate your needs.</p>
-
-      <h3>About Payment and Refunds</h3>
+    </div>
+  </div>
+      <div class="accordion-item">
+        <h3 class="accordion-title">About Payment and Refunds</h3>
+        <div class="accordion-content">
       <p>What payment methods do you accept? We accept various payment methods including credit cards, PayPal, and more.</p>
       <p>How can I request a refund? If you are unsatisfied with your purchase, please contact our customer service to request a refund.</p>
       <p>What should I do if there is a payment issue? If you encounter any payment issues, please contact our support team for assistance.</p>
-    </div>
+        </div>
+      </div>
 
     <h2 class="madimi-one-regular">Events and Promotions</h2>
     <p class="madimi-one-regular">Explore our 'Events and Promotions' section to stay updated on upcoming events and special offers. Each event or promotion is showcased in a card that includes the title, date, time, a brief description, and a promotional video. Don't miss out on these exciting opportunities!</p>
@@ -110,6 +144,6 @@
     </div>
     <p class="footer-credits">© 2024 KETO Hero. All rights reserved.</p>
   </footer>
-<script src="javaS/218.js"></script>
+<script src="java/lab2.js"></script>
 </body>
 </html>
