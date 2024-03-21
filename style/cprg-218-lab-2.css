@@ -4,123 +4,10 @@
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  body, html {
-    height: 100%;
-  }
-  
-  /* The hero image */
-  .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../arrest/cookies.jpeg");
-  
-  /* Set a specific height */
-  height: 50%;
-  
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  }
-  
-  /* Buttons */
-  button {
-    background-color: #f6d87c; /* 主题颜色 */
-    color: #A87A56; /* 文字颜色 */
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.4s ease-out;
-  }
-  
-  button:hover {
-    background-color: #FFEDE0; /* 鼠标悬停时的背景色 */
-  }
-  
-  /* Cheese Gallery */
-  .cheese-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .cheese-item {
-    display: flex;
-    align-items: center;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%; /* 设置宽度为100% */
-  }
-  
-  
-  .cheese-description {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .cheese-description p {
-    margin: 0 0 10px;
-  }
-  
-  .cheese-image {
-    max-width: 600px;
-    height: auto;
-    border-radius: 0 10px 10px 0;
-  }
-  
-  /* Accordion */
-  .accordion {
-    background-color: #ffeeaf;
-    color: #A87A56;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #f6d87c;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: #A87A56;
-    display: none;
-    overflow: hidden;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,77 +101,110 @@ body::after {
     object-fit: cover; /* Ensure that images cover the area without stretching */
 }
 
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../arrest/cookies.jpeg");
   
-  /* Footer CSS */
-  footer {
+    /* Set a specific height */
+    height: 50vh; /* 设置高度为视口的50% */
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Buttons */
+button {
+    background-color: #f6d87c; /* 主题颜色 */
+    color: #A87A56; /* 文字颜色 */
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.4s ease-out;
+}
+
+button:hover {
+    background-color: #FFEDE0; /* 鼠标悬停时的背景色 */
+}
+
+/* Footer CSS */
+footer {
     background-color: #f6d87c; /* 保持原有颜色 */
     color: #A87A56; /* 文字颜色 */
     padding: 20px;
     text-align: center;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     justify-content: space-around; /* 在元素之间保持均匀间距 */
     align-items: center; /* 使内容垂直居中 */
     margin: 0 auto; /* 水平居中 */
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     text-align: left; /* 文本左对齐 */
     flex: 1; /* 占用可用空间 */
     padding: 0 20px; /* 添加一些内边距 */
-  }
-  
-  .google-map {
+}
+
+.google-map {
     flex: 1; /* 占用可用空间 */
     padding: 0 20px; /* 添加一些内边距 */
     order: 2; /* 确保地图总是在右边 */
-  }
-  
-  .google-map iframe {
+}
+
+.google-map iframe {
     width: 50%; /* 使用其容器的全部宽度 */
     height: 150px; /* 设置固定高度 */
-  }
-  
-  .footer-links {
+}
+
+.footer-links {
     list-style-type: none;
     padding: 0;
     text-align: left;
-  }
-  
-  .footer-links li a {
+}
+
+.footer-links li a {
     color: #A87A56;
     text-decoration: none;
-  }
-  
-  #copyright {
+}
+
+#copyright {
     margin-top: 20px;
     text-align: center;
     width: 100%;
-  }
-  
-  /* 响应式调整 */
-  @media (max-width: 800px) {
+}
+
+/* 响应式调整 */
+@media (max-width: 800px) {
     .footer-content {
-      flex-direction: column;
+        flex-direction: column;
     }
     .footer-text, .google-map {
-      width: 100%;
-      padding: 20px 0; /* 调整为上下内边距，移除左右内边距 */
+        width: 100%;
+        padding: 20px 0; /* 调整为上下内边距，移除左右内边距 */
     }
     .google-map iframe {
-      height: 200px; /* 较小屏幕上的较小地图 */
+        height: 200px; /* 较小屏幕上的较小地图 */
     }
-  }
-  .footer-icons {
-    display: flex;
-    justify-content: center; /* 或者其他您喜欢的对齐方式 */
-    gap: 20px; /* 调整图标之间的间隔 */
-  }
-  
-  .footer-icons .material-icons {
-    font-size: 24px; /* 调整图标大小 */
-    color: #A87A56; /* 调整图标颜色，您可以改为任何您喜欢的颜色 */
-  }
-  
+}
+.footer-icons {
+  display: flex;
+  justify-content: center; /* 或者其他您喜欢的对齐方式 */
+}
