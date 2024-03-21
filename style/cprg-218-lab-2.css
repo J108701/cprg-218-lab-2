@@ -223,7 +223,7 @@ footer {
   .card {
     width: calc(50% - 20px); /* Two cards per row */
     margin-right: 20px; /* Add some spacing between cards */
-    float: none; /* Remove float to allow cards to stack vertically */
+    float: left; /* Float the cards to enable side-by-side placement */
   }
 
   .card:nth-child(2n) {
