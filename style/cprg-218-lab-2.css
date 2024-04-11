@@ -39,11 +39,15 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   color: white;
 }
+body, .hero-text, button, .accordion-title, .accordion-content p {
+  color: #4f0606; 
+  background-color: #fffffe97; 
+}
 
 /* Buttons */
 button {
-  background-color: #f6d87c;
-  color: #A87A56;
+  background-color: #f3ba36;
+  color: #4c280d;
   border: none;
   padding: 12px 24px;
   cursor: pointer;
@@ -51,9 +55,31 @@ button {
   font-size: 16px;
   transition: background-color 0.4s ease-out;
 }
+.material-icons {
+  margin-right: 8px; /* Adjust right margin for icons */
+}
+
+button {
+  margin-bottom: 15px; /* Add bottom margin to buttons */
+}
+
 
 button:hover {
   background-color: #FFEDE0;
+}
+h1 {
+  font-size: 28px; /* Largest size for main titles */
+}
+
+h2 {
+  background-color: hsl(42, 91%, 55%); /* Light grey background for subtitles */
+  padding: 5px;
+  color: #333; /* Ensuring contrast */
+  font-size: 24px; /* Subtitles, distinct but smaller than h1 */
+}
+
+h3 {
+  font-size: 20px; /* Further differentiation for sub-sections */
 }
 
 /* Footer CSS */
@@ -114,7 +140,7 @@ footer {
 
 /* Card styles */
 .card {
-  background-color: #ffffff;
+  background-color: #f8ddac;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -131,9 +157,15 @@ footer {
   height: auto;
   border-radius: 10px 10px 0 0; 
 }
+.card img {
+  margin: 15px auto; /* Apply equal margin on top and bottom, and center horizontally */
+  display: block; /* Ensure the margin applies correctly */
+}
+
 
 .card .content {
   padding: 20px;
+  
 }
 
 .card h2 {
@@ -168,6 +200,19 @@ footer {
   box-shadow: 0 2px 4px rgba(59, 5, 5, 0.1); 
   transition: box-shadow 0.3s ease; 
 }
+.card .content a {
+  background-color: #fdf6e8; /* Choose a color that makes the link stand out */
+  color: #4c280d; /* Text color for readability */
+  padding: 5px 10px; /* Add some padding to make it look like a button or a badge */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  display: inline-block; /* To respect padding and border-radius */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card .content a:hover {
+  background-color: #e7c88e; /* Slightly lighter or darker on hover */
+  text-decoration: none; /* Removing underline on hover for aesthetic purposes */
+}
 
 /* Responsive layout */
 @media (min-width: 992px) {
@@ -190,7 +235,7 @@ footer {
   }
 }
 .accordion-item {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #8f1313;
   margin-bottom: 10px; 
 }
 
@@ -198,13 +243,13 @@ footer {
   margin: 0;
   padding: 10px;
   cursor: pointer;
-  background-color: #f9f9f9;
+  background-color: #fdce6e;
   border-radius: 5px; 
   transition: background-color 0.3s; 
 }
 
 .accordion-title:hover {
-  background-color: #eaeaea;
+  background-color: #feeed8;
 }
 
 .accordion-content {
@@ -251,4 +296,33 @@ footer {
 iframe {
   width: 100%; 
   height: 400px; 
+}
+
+.material-icons {
+  margin-right: 12px; /* Increased spacing to the right of icons */
+}
+.card img {
+  margin: 15px auto; /* Consistent spacing on all sides */
+  display: block; /* Ensure the margin applies correctly */
+}
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Adjusts the flex container to lay out its items vertically */
+  align-items: flex-start; /* Aligns items to the start of the flex container, useful if the container has wider width */
+}
+
+.footer-links a {
+  display: block; /* Makes each link take up the full width of its container, causing them to stack */
+  margin-bottom: 10px; /* Adds space between each link; adjust as needed */
+  color: #A87A56; /* Assuming you keep the same link color */
+  text-decoration: none; /* Optional: removes the underline from links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Restores the underline on hover for visual feedback */
+}
+.footer-socials svg {
+  width: 32px; 
+  fill: rgb(111, 55, 3); 
+  margin-right: 10px; 
 }
