@@ -39,11 +39,16 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   color: white;
 }
-body, .hero-text, button, .accordion-title, .accordion-content p {
-  color: #4f0606; 
-  background-color: #fffffe97; 
+body, .hero-text, .madimi-one-regular, button, .accordion-title, .accordion-content p {
+  color: #000; 
+  background-color: #ffffffce; 
 }
-
+.hero-image {
+  background-image: linear-gradient(rgba(27, 16, 2, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/cookies.jpeg");
+}
+.hero-text, .madimi-one-regular {
+  color: #333; 
+}
 /* Buttons */
 button {
   background-color: #f3ba36;
