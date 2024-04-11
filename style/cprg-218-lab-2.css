@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../arrest/cookies.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/cookies.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
